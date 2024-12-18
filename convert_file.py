@@ -32,3 +32,18 @@ def convert_ckpt_to_onnx(architecture='ir_50', output_onnx_path='model.onnx'):
 # Right now Adaface seems to only support 'ir_50' which adaface_ir50_ms1mv2.ckpt and this is hardcoded in the inference file in the Adaface repo
 if __name__ == "__main__":
     convert_ckpt_to_onnx(architecture='ir_50', output_onnx_path='adaface_model.onnx')
+
+
+
+#import onnx
+
+#model = onnx.load("C:/Users/tyra_/.insightface/models/adaface_custom/adaface_model.onnx")
+#print("Model Outputs:")
+#for output in model.graph.output:
+#    print(output.name, output.type)
+    
+# Remove the second output (shape (1, 1))
+#model.graph.output.remove(model.graph.output[1])
+
+# Save the modified model
+#onnx.save(model, "C:/Users/tyra_/.insightface/models/adaface_custom/adaface_model_modified.onnx")
