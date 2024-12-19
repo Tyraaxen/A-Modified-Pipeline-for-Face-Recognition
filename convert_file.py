@@ -1,11 +1,12 @@
 import torch
 from AdaFace.inference import load_pretrained_model, to_input
+import onnx
 
 #Change to correct directory
 import os
 os.chdir('C:/Users/tyra_/Comp_Science_project/A-Modified-Pipeline-for-Face-Recognition/AdaFace')
 
-def convert_ckpt_to_onnx(architecture='ir_50', output_onnx_path='model.onnx'):
+def convert_ckpt_to_onnx(architecture='ir_101', output_onnx_path='model.onnx'):
     # Load the pre-trained model
     model = load_pretrained_model(architecture=architecture)
 
@@ -31,7 +32,7 @@ def convert_ckpt_to_onnx(architecture='ir_50', output_onnx_path='model.onnx'):
 
 # Right now Adaface seems to only support 'ir_50' which adaface_ir50_ms1mv2.ckpt and this is hardcoded in the inference file in the Adaface repo
 if __name__ == "__main__":
-    convert_ckpt_to_onnx(architecture='ir_50', output_onnx_path='adaface_model.onnx')
+    convert_ckpt_to_onnx(architecture='ir_101', output_onnx_path='adaface_ir101_webface12m.onnx')
 
 
 
