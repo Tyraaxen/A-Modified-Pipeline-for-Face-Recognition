@@ -1,5 +1,6 @@
 # A-Modified-Pipeline-for-Face-Recognition
 Project in Computational Science
+
 ## ONNX Runtime Python Package (TA)
 
 When using ONNX Runtime in InsightFace, there are two installation options:
@@ -41,3 +42,4 @@ The inference.py script in the Adaface repository is originally hardcoded to onl
 Using the convert_file.py script, the loaded model is converted into ONNX format, making it compatible with the InsightFace framework.
 
 The ONNX-formatted Adaface model is then integrated into the InsightFace recognition pipeline using a new directory placed in the .insightface directory, as mentioned above.
+
