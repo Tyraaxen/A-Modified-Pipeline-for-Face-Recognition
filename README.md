@@ -7,7 +7,7 @@ When using ONNX Runtime in InsightFace, there are two installation options:
 
 ```bash
 pip install onnxruntime
-
+```
 and
 
 pip install onnxruntime-gpu
