@@ -10,7 +10,9 @@ pip install onnxruntime
 ```
 and
 
+```bash
 pip install onnxruntime-gpu
+```
 
 To enable GPU support for InsightFace, you must install the onnxruntime-gpu package. Additionally, a compatible version of CUDA and cuDNN must be installed on your system to ensure proper GPU functionality.
 Integration of Adaface in Insightface (ALL)
