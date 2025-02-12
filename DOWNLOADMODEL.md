@@ -4,11 +4,11 @@ steps:
 3. Now you should have a model in ONNX format. The only thing left to do is to (possibly) remove one of the outputs of the model. This is because the AdaFace models have two outputs: the feature vector and a confidence score, but Insightface only accepts models that have one output: the feature vector. VART ÄR KODEN
 4. Now you should have a ONNX file in the right format. You can now create a new model directory by navigating to  ~/.insightface/models/ on your computer, probably located in the home directry the installation was done under. There you will find the buffalo_l model. What you do then is that you create a new folder with a name of your choice- the name used for the directory in this code for the AdaFace ir_101 is adaface_101.
 
-![Contents of models after adding custom model](Images\Instruction-images\contents_of_models.PNG)
+![Contents of models after adding custom model](Images/Instruction-images/contents_of_models.PNG)
 
 Then copy the contents from the buffalo_l directory, **except** the feature extractor model into your new folder. The feature extractor model, <em>w600k_r50</em>, you substitute with your own model.
 
-![The files to copy over](Images\Instruction-images\buffalo_l_folder_screenshot.PNG)
+![The files to copy over](Images/Instruction-images/buffalo_l_folder_screenshot.PNG)
 
  This way you can use InsightFace as usual but with a new model for the feature extractor step.
 
